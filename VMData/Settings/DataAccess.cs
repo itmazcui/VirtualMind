@@ -38,5 +38,27 @@ namespace VMData.Settings
 
             return _tabla;
         }
+
+        public bool ExecuteSPBool(string procedureName, Dictionary<string, object> parameters = null)
+        {
+            var command = new SqlCommand(procedureName);
+
+            if (parameters != null)
+                foreach (var item in parameters)
+                {
+                    DbParameter param = new SqlParameter(item.Key, item.Value);
+                    param.Direction = ParameterDirection.Input;
+                    command.Parameters.Add(param);
+                }
+
+            command.CommandType = CommandType.StoredProcedure;
+            command.Connection = _connection.OpenConnection();
+            var valor = int.Parse(command.ExecuteScalar().ToString());
+            //Esto devuelve un datatable. Esto significa: DataTable firstTable = dataSet.Tables[0];
+            //_tabla.Load(_reader);
+            command.Connection = _connection.CloseConnection();
+
+            return valor == 1;
+        }
     }
 }

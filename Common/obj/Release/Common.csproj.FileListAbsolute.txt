@@ -1,0 +1,6 @@
+C:\Users\azcui\source\repos\VirtualMindAPI\Common\bin\Release\Common.dll
+C:\Users\azcui\source\repos\VirtualMindAPI\Common\bin\Release\Common.pdb
+C:\Users\azcui\source\repos\VirtualMindAPI\Common\obj\Release\Common.csprojAssemblyReference.cache
+C:\Users\azcui\source\repos\VirtualMindAPI\Common\obj\Release\Common.csproj.CoreCompileInputs.cache
+C:\Users\azcui\source\repos\VirtualMindAPI\Common\obj\Release\Common.dll
+C:\Users\azcui\source\repos\VirtualMindAPI\Common\obj\Release\Common.pdb

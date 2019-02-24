@@ -1,0 +1,11 @@
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\bin\Release\VMServices.dll
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\bin\Release\VMServices.pdb
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\bin\Release\Common.dll
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\bin\Release\VMData.dll
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\bin\Release\Common.pdb
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\bin\Release\VMData.pdb
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\obj\Release\VMServices.csprojAssemblyReference.cache
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\obj\Release\VMServices.csproj.CoreCompileInputs.cache
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\obj\Release\VMServices.csproj.CopyComplete
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\obj\Release\VMServices.dll
+C:\Users\azcui\source\repos\VirtualMindAPI\VMServices\obj\Release\VMServices.pdb

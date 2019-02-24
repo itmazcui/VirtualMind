@@ -1,4 +1,5 @@
 ﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using VMData.Settings;
@@ -27,6 +28,44 @@ namespace VMData
             }
 
             return usuarios;
+        }
+
+        public bool ModificarUsuario(Usuario usuario)
+        {
+            var da = new DataAccess();
+
+            var parametros = new Dictionary<string, object>();
+            parametros.Add("@id_user", usuario.IdUsuario);
+            parametros.Add("@apellido", usuario.Apellido);
+            parametros.Add("@email", usuario.Email);
+            parametros.Add("@nombre", usuario.Nombre);
+            parametros.Add("@password", usuario.Password);
+
+            var result = da.ExecuteSPBool("sp_utuser", parametros);
+            return result;
+        }
+
+        public bool EliminarUsuario(int idUsuario)
+        {
+            var da = new DataAccess();
+            var parametros = new Dictionary<string, object>();
+            parametros.Add("@id_user", idUsuario);
+            var result = da.ExecuteSPBool("sp_dtuser", parametros);
+            return result;
+        }
+
+        public bool GuardarUsuario(Usuario usuario)
+        {
+            var da = new DataAccess();
+
+            var parametros = new Dictionary<string, object>();
+            parametros.Add("@apellido", usuario.Apellido);
+            parametros.Add("@email", usuario.Email);
+            parametros.Add("@nombre", usuario.Nombre);
+            parametros.Add("@password", usuario.Password);
+
+            var result = da.ExecuteSPBool("sp_ituser", parametros);
+            return result;
         }
     }
 }
